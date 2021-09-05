@@ -70,7 +70,7 @@ export default {
         this.checkHeight();
         this.checkAge();
 
-        const response = await fetch(`http://localhost:8080?skiStyle=${this.selectedSkiStyle}&age=${this.selectedAge}&height=${this.selectedHeight}`);
+        const response = await fetch(`http://localhost:8080/skilength?skiStyle=${this.selectedSkiStyle}&age=${this.selectedAge}&height=${this.selectedHeight}`);
         this.calculatedSkiLengths = await response.json();
       } catch (error) {
         this.error = true;

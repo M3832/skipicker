@@ -16,7 +16,7 @@ public class SkiPickerController {
         this.calculateSkiLengthService = calculateSkiLengthService;
     }
 
-    @GetMapping
+    @GetMapping("/skilength")
     public ResponseEntity<GetRecommendedSkiLengthResponse> getRecommendedSkiLength(
             @RequestParam SkiStyleRequestParam skiStyle,
             @RequestParam Integer age,
