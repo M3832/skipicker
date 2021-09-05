@@ -8,7 +8,7 @@ public class ClassicSkiStyleConstraints implements SkiStyleConstraints {
     public static final int LENGTH_ADDITION = 20;
 
     @Override
-    public LengthConstraints getLengthConstraintsFromUserHeight(int height) {
+    public LengthConstraints getLengthConstraints(int height) {
         final LengthConstraints lengthConstraints = new LengthConstraints();
         final int recommendedLength = Math.min(height + LENGTH_ADDITION, MAX_LENGTH);
 

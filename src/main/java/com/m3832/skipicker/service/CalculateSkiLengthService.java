@@ -12,7 +12,7 @@ public class CalculateSkiLengthService {
         final Age age = new Age(inputAge);
         final SkiStyle skiStyle = SkiStyle.valueOf(inputSkiStyle);
 
-        final LengthConstraints lengthConstraints = skiStyle.getLengthConstraintsFromUserHeight(inputHeight);
+        final LengthConstraints lengthConstraints = skiStyle.getLengthConstraints(inputHeight);
         final LengthConstraints lengthConstraintsFromAge = age.getLengthConstraints(inputHeight);
         lengthConstraints.combineWith(lengthConstraintsFromAge);
 
