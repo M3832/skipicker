@@ -12,7 +12,7 @@ public enum SkiStyle {
         this.skiStyleConstraints = skiStyleConstraints;
     }
 
-    public LengthConstraints getConstraintsFromUserHeight(int userHeight) {
-        return skiStyleConstraints.getConstraintsFromUserHeight(userHeight);
+    public LengthConstraints getLengthConstraintsFromUserHeight(int userHeight) {
+        return skiStyleConstraints.getLengthConstraintsFromUserHeight(userHeight);
     }
 }

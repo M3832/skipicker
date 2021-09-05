@@ -9,7 +9,7 @@ public class FreestyleSkiStyleConstraints implements SkiStyleConstraints {
     public static final int MIN_LENGTH_SUBTRACTION = 10;
 
     @Override
-    public LengthConstraints getConstraintsFromUserHeight(int height) {
+    public LengthConstraints getLengthConstraintsFromUserHeight(int height) {
         final LengthConstraints lengthConstraints = new LengthConstraints();
 
         lengthConstraints.setRecommendedMinLength(height + MIN_RECOMMENDED_LENGTH_ADDITION);
